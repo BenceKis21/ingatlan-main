@@ -23,7 +23,7 @@ class IngatlanSeeder extends Seeder
                 ['nev'=>'Ipari ingatlan'],
             ]
             );
-        DB::table('ingatlanok')->(
+        DB::table('ingatlanok')->insert(
             [
                 ['kategoria'=>1,
                 'leiras'=>'Családi ház',
@@ -33,7 +33,7 @@ class IngatlanSeeder extends Seeder
                 'kepUrl'=>'http://ingatlan.hu/65875.jpg'],
 
                 [
-                    'kategoria'=>2,
+                'kategoria'=>2,
                 'leiras'=>'Építési telek',
                 'hirdetesDatuma'=>'2026-02-16',
                 'tehermentes'=>true,
@@ -41,7 +41,7 @@ class IngatlanSeeder extends Seeder
                 'kepUrl'=>'http://ingatlan.hu/65874.jpg'
                 ]
 
-                ]
+            ]
                 );
     }
 }
